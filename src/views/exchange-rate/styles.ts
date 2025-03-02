@@ -15,12 +15,7 @@ export const styles = StyleSheet.create({
   titleContainer: {
     padding: 16,
     alignItems: 'center',
-
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 5,
+    marginTop: 16,
   },
   titleRow: {
     flexDirection: 'row',
