@@ -8,15 +8,15 @@ Here are some screenshots of the app in action:
 
 ### Main Screen
 
-![Main Screen](screenshots/screen-1.png)
+<img src="screenshots/screen-1.png" alt="Main screen" height="400">
 
 ### Conversion Modal
 
-![Conversion Modal](screenshots/screen-2.png)
+<img src="screenshots/screen-2.png" alt="Conversion screen" height="400">
 
 ### Result
 
-![Conversion Modal](screenshots/screen-3.png)
+<img src="screenshots/screen-3.png" alt="Result screen" height="400">
 
 ## Features
 
