@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+# DollarNow
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+DollarNow is a real-time dollar exchange rate application built with Expo, TypeScript, and React Native. The main screen displays the current exchange rate, and if you want to convert a specific amount from dollars to Brazilian Real (BRL), simply click the "Convert" button, which will open a modal where you can input the amount and see the result instantly.
 
-## Get started
+## Screenshots
 
-1. Install dependencies
+Here are some screenshots of the app in action:
 
-   ```bash
-   npm install
-   ```
+### Main Screen
 
-2. Start the app
+![Main Screen](screenshots/screen-1.png)
 
-   ```bash
-    npx expo start
-   ```
+### Conversion Modal
 
-In the output, you'll find options to open the app in a
+![Conversion Modal](screenshots/screen-2.png)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Result
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+![Conversion Modal](screenshots/screen-3.png)
 
-## Get a fresh project
+## Features
 
-When you're ready, run:
+- **Current exchange rate**: The main screen displays the real-time dollar to Brazilian Real exchange rate.
+- **Conversion modal**: Easily input the dollar amount you want to convert by clicking the "Convert" button to open the modal.
+- **Instant results**: The app will instantly show the converted value in Brazilian Real once you input the amount.
+
+## How to Use
+
+1. Upon opening the app, the current exchange rate for the day is displayed on the main screen.
+2. To convert a specific amount, click the "Convert" button.
+3. A modal will appear where you can enter the dollar amount you wish to convert.
+4. After entering the value, the app will automatically show the equivalent amount in Brazilian Real.
+
+## Installation
+
+To run the app locally, follow these steps:
+
+1. Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/dollar-now.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2.Navigate to the project directory:
 
-## Learn more
+```bash
+cd dollar-now
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3.Install the dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+yarn
+```
 
-## Join the community
+4. Run the application:
 
-Join our community of developers creating universal apps.
+```bash
+yarn start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Choice `i` to run iOS simulator or `a` to run Android simulator and the app should now be running locally on your Expo client or simulator.

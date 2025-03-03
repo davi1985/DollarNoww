@@ -1,12 +1,12 @@
-import { currentBRL } from "@/src/utils";
-import { useNewExchangeRateViewModel } from "@/src/view-models/new-exchange-rate.view-model";
-import { XCircle } from "lucide-react-native";
-import { Modal, Text, TextInput, TouchableOpacity, View } from "react-native";
-import { styles } from "./styles";
+import { currentBRL } from '@/src/utils'
+import { useNewExchangeRateViewModel } from '@/src/view-models/new-exchange-rate.view-model'
+import { XCircle } from 'lucide-react-native'
+import { Modal, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { styles } from './styles'
 
 type Props = { visibility: boolean; onClose: () => void } & ReturnType<
   typeof useNewExchangeRateViewModel
->;
+>
 
 export const NewExchangeRateModal = ({
   visibility,
@@ -30,11 +30,11 @@ export const NewExchangeRateModal = ({
 
           <TouchableOpacity
             onPress={() => {
-              onClose();
-              handleClean();
+              onClose()
+              handleClean()
             }}
           >
-            <XCircle color={"#304D6D"} />
+            <XCircle color={'#304D6D'} />
           </TouchableOpacity>
         </View>
 
@@ -42,9 +42,10 @@ export const NewExchangeRateModal = ({
           <Text style={styles.label}>Valor em Dólares</Text>
 
           <TextInput
-            placeholder="200"
+            placeholder="Digite um valor"
             style={styles.input}
             value={amount}
+            keyboardType="decimal-pad"
             onChangeText={handleAmount}
           />
 
@@ -65,4 +66,4 @@ export const NewExchangeRateModal = ({
       </View>
     </View>
   </Modal>
-);
+)
