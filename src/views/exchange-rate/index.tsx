@@ -47,7 +47,9 @@ export const ExchangeRate = () => {
               </View>
 
               <Text style={styles.amount}>
-                {customFormatCurrency('BRL', usdBrl)}
+                {usdBrl
+                  ? customFormatCurrency('BRL', usdBrl)
+                  : customFormatCurrency('BRL', 0.0)}
               </Text>
             </View>
 
