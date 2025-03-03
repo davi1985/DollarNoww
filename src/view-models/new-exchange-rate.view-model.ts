@@ -8,8 +8,9 @@ type Props = { service: ExchangeRateServiceProtocol }
 export const useNewExchangeRateViewModel = ({ service }: Props) => {
   const [amount, setAmount] = useState('')
   const [result, setResult] = useState<number>(0)
-
+  console.log({ amount })
   const handleAmount = (value: string) => {
+    console.log({ value })
     setAmount(value)
   }
 
@@ -24,7 +25,8 @@ export const useNewExchangeRateViewModel = ({ service }: Props) => {
       data: response,
     })
 
-    setResult(Number(amount) * currency)
+    setResult(Number(amount.replace(',', '.')) * currency)
+    setAmount('')
   }
 
   const handleClean = () => {
