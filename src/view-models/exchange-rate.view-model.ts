@@ -12,6 +12,7 @@ export const useExchangeRateViewModel = ({ service }: Props) => {
 
   const getExchangeRate = useCallback(async () => {
     const data = await service.getExchangeRate()
+
     setCurrencies(data)
     setLoading(false)
   }, [])
@@ -20,7 +21,7 @@ export const useExchangeRateViewModel = ({ service }: Props) => {
     getExchangeRate()
   }, [])
 
-  const usdBrl = currencies.USDBRL?.ask
+  const usdBrl = currencies.USDBRL?.low
 
   return { usdBrl, loading, refresh: getExchangeRate }
 }

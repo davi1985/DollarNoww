@@ -1,15 +1,15 @@
-import { ExchangeRate } from '../models/exchange-rate'
+import { ExchangeRate } from "../models/exchange-rate";
 
 type Props = {
-  data: ExchangeRate
-}
+  data: ExchangeRate;
+};
 
 export class ExchangeRateMapper {
   static toModel({ data }: Props) {
-    const currency = `USDBRL` as keyof ExchangeRate
+    const currency = `USDBRL` as keyof ExchangeRate;
 
     return {
-      currency: data[currency].ask,
-    }
+      currency: data[currency].low,
+    };
   }
 }

@@ -1,8 +1,8 @@
 export type ExchangeRate = {
   USDBRL: {
-    ask: number
+    low: number
   }
   EURBRL: {
-    ask: number
+    low: number
   }
 }
